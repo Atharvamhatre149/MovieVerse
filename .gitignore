@@ -16,9 +16,7 @@ Thumbs.db
 *.sqlite
 
 # Ignore environment-specific files
-.env
-.env.local
-.env.*.local
+
 
 # Ignore package manager files
 node_modules/
