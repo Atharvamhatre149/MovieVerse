@@ -5,7 +5,7 @@ import useFetch from '../../../hooks/useFetch';
 import Carousel from '../../../components/carousel/Carousel';
 
 
-const Upcoming = () => {
+const Coming = () => {
 
   const [endpoint,setEndpoint]=useState('movie');
   const [endpoint1,setEndpoint1]=useState('upcoming');
@@ -28,4 +28,4 @@ const Upcoming = () => {
   )
 }
 
-export default Upcoming;
+export default Coming;
