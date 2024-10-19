@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -67,7 +68,7 @@ const DetailsBanner = ({ video, crew }) => {
                                         <Genres data={_genres}  />
 
                                         <div className="row">
-                                            <CircleRating rating={data.vote_average.toFixed(1)} />
+                                            <CircleRating rating={data.vote_average?.toFixed(1)} />
                                             <div className="playbtn" onClick={() => {
                                                 setShow(true);
                                                 setVideoId(video.key)

@@ -63,11 +63,13 @@ import "./style.scss";
           {!loading ? (
               <div className="carouselItems" ref={carouselContainer}>
                 {data?.map((item)=>{
-                  const posterUrl=item.poster_path ? url.poster+item.poster_path : PosterFallback;
+                  
+                  const posterUrl=item?.poster_path ? url?.poster+item?.poster_path : PosterFallback;
+
                   return (
                     <div 
                       key={item.id} 
-                      className="carouselItem" onClick={()=> navigate(`/${item.media_type || endpoint}/${item.id}`)}
+                      className="carouselItem" onClick={()=> navigate(`/${item?.media_type || endpoint}/${item.id}`)}
                       >
                         <div className="posterBlock">
                           <Img src={posterUrl} />

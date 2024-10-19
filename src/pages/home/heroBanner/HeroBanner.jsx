@@ -19,7 +19,6 @@ const HeroBanner = () => {
     if (url?.backdrop && data?.results) {
         const bg = url.backdrop + data.results[Math.floor(Math.random() * 20)]?.backdrop_path;
         setBackground(bg);
-        console.log(bg);
     } 
             
 },[url,data]);
